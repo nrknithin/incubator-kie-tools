@@ -1,0 +1,15 @@
+# Output directory
+dist
+
+# Compiled files
+*.js
+*.d.ts
+
+# Node modules
+node_modules
+
+# Test files (if you want to lint them separately or with different rules)
+# For now, we will ignore tests from the main linting process,
+# as they might have different linting requirements (e.g. jest globals)
+# or might be linted as part of a separate test command.
+# /tests

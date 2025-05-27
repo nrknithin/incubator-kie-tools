@@ -1,0 +1,38 @@
+{
+  "name": "@kie-tools/dmn-documentation-generator",
+  "version": "0.0.0",
+  "description": "Generates PDF documentation from DMN models.",
+  "license": "Apache-2.0",
+  "keywords": ["dmn", "documentation", "pdf", "kie-tools"],
+  "homepage": "https://github.com/apache/incubator-kie-tools",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/apache/incubator-kie-tools.git"
+  },
+  "bugs": {
+    "url": "https://github.com/apache/incubator-kie-tools/issues"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build:dev": "rimraf dist && pnpm copy:css && tsc -p tsconfig.json",
+    "build:prod": "rimraf dist && pnpm copy:css && pnpm lint && tsc -p tsconfig.json && pnpm test",
+    "copy:css": "echo 'No CSS to copy yet' && exit 0"
+  },
+  "dependencies": {
+    "@kie-tools/dmn-marshaller": "workspace:*",
+    "jspdf": "^2.5.1"
+  },
+  "devDependencies": {
+    "@kie-tools/eslint": "workspace:*",
+    "@kie-tools/jest-base": "workspace:*",
+    "@kie-tools/tsconfig": "workspace:*",
+    "@types/jest": "^29.5.12", 
+    "@types/node": "^20.11.0",
+    "rimraf": "^3.0.2",
+    "typescript": "^5.3.3",
+    "copyfiles": "^2.4.1"
+  }
+}
