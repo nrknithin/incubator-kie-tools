@@ -482,7 +482,7 @@ Error details: ${err}`);
                   isEditorReady={editor?.isReady}
                   dmnLanguageService={dmnLanguageService}
                 >
-                  <EditorToolbar workspaceFile={file.workspaceFile} editor={editor} />
+                  {/* <EditorToolbar workspaceFile={file.workspaceFile} editor={editor} /> */}
                   <Divider />
                   <PageSection hasOverflowScroll={true} padding={{ default: "noPadding" }} aria-label="Editor section">
                     <DmnRunnerDrawer>

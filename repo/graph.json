@@ -154,11 +154,12 @@
       { "id": "@kie-tools/dev-deployment-quarkus-blank-app" },
       { "id": "@kie-tools/dev-deployment-quarkus-blank-app-image" },
       { "id": "@kie-tools/maven-m2-repo-via-http-image" },
-      { "id": "@kie-tools/import-java-classes-component" },
-      { "id": "@kie-tools/dmn-feel-antlr4-parser" },
+      { "id": "@kie-tools/dmn-documentation-generator" },
       { "id": "@kie-tools/dmn-marshaller" },
       { "id": "@kie-tools/dmn-marshaller-backend-compatibility-tester" },
       { "id": "@kie-tools/dmn-testing-models" },
+      { "id": "@kie-tools/import-java-classes-component" },
+      { "id": "@kie-tools/dmn-feel-antlr4-parser" },
       { "id": "@kie-tools-core/switch-expression-ts" },
       { "id": "@kie-tools/dmn-runner" },
       { "id": "@kie-tools/extended-services-api" },
@@ -1594,32 +1595,7 @@
         "weight": 1
       },
       {
-        "source": "@kie-tools/import-java-classes-component",
-        "target": "@kie-tools-core/vscode-java-code-completion",
-        "weight": 1
-      },
-      {
-        "source": "@kie-tools/import-java-classes-component",
-        "target": "@kie-tools/i18n-common-dictionary",
-        "weight": 1
-      },
-      {
-        "source": "@kie-tools/import-java-classes-component",
-        "target": "@kie-tools-core/monaco-editor",
-        "weight": 1
-      },
-      {
-        "source": "@kie-tools/import-java-classes-component",
-        "target": "@kie-tools-core/patternfly-base",
-        "weight": 1
-      },
-      {
-        "source": "@kie-tools/import-java-classes-component",
-        "target": "@kie-tools-core/webpack-base",
-        "weight": 1
-      },
-      {
-        "source": "@kie-tools/dmn-feel-antlr4-parser",
+        "source": "@kie-tools/dmn-documentation-generator",
         "target": "@kie-tools/dmn-marshaller",
         "weight": 1
       },
@@ -1651,6 +1627,36 @@
       {
         "source": "@kie-tools/dmn-testing-models",
         "target": "@kie-tools/maven-base",
+        "weight": 1
+      },
+      {
+        "source": "@kie-tools/import-java-classes-component",
+        "target": "@kie-tools-core/vscode-java-code-completion",
+        "weight": 1
+      },
+      {
+        "source": "@kie-tools/import-java-classes-component",
+        "target": "@kie-tools/i18n-common-dictionary",
+        "weight": 1
+      },
+      {
+        "source": "@kie-tools/import-java-classes-component",
+        "target": "@kie-tools-core/monaco-editor",
+        "weight": 1
+      },
+      {
+        "source": "@kie-tools/import-java-classes-component",
+        "target": "@kie-tools-core/patternfly-base",
+        "weight": 1
+      },
+      {
+        "source": "@kie-tools/import-java-classes-component",
+        "target": "@kie-tools-core/webpack-base",
+        "weight": 1
+      },
+      {
+        "source": "@kie-tools/dmn-feel-antlr4-parser",
+        "target": "@kie-tools/dmn-marshaller",
         "weight": 1
       },
       {
@@ -2863,6 +2869,7 @@
     ["@kie-tools/dev-deployment-quarkus-blank-app", "packages/dev-deployment-quarkus-blank-app"],
     ["@kie-tools/dev-deployment-quarkus-blank-app-image", "packages/dev-deployment-quarkus-blank-app-image"],
     ["@kie-tools/dev-deployment-upload-service", "packages/dev-deployment-upload-service"],
+    ["@kie-tools/dmn-documentation-generator", "packages/dmn-documentation-generator"],
     ["@kie-tools/dmn-editor", "packages/dmn-editor"],
     ["@kie-tools/dmn-editor-envelope", "packages/dmn-editor-envelope"],
     ["@kie-tools/dmn-editor-standalone", "packages/dmn-editor-standalone"],

@@ -107,11 +107,12 @@ digraph G {
   "@kie-tools/dev-deployment-quarkus-blank-app" [ color = "black", fontcolor = "black", style = "dashed, rounded" ];
   "@kie-tools/dev-deployment-quarkus-blank-app-image" [ color = "black", fontcolor = "black", style = "dashed, rounded" ];
   "@kie-tools/maven-m2-repo-via-http-image" [ color = "black", fontcolor = "black", style = "dashed, rounded" ];
+  "@kie-tools/dmn-documentation-generator" [ color = "blue", fontcolor = "blue", style = "rounded" ];
+  "@kie-tools/dmn-marshaller" [ color = "blue", fontcolor = "blue", style = "rounded" ];
   "@kie-tools/dmn-editor" [ color = "blue", fontcolor = "blue", style = "rounded" ];
   "@kie-tools/import-java-classes-component" [ color = "blue", fontcolor = "blue", style = "rounded" ];
   "@kie-tools/pmml-editor-marshaller" [ color = "blue", fontcolor = "blue", style = "rounded" ];
   "@kie-tools/dmn-feel-antlr4-parser" [ color = "blue", fontcolor = "blue", style = "rounded" ];
-  "@kie-tools/dmn-marshaller" [ color = "blue", fontcolor = "blue", style = "rounded" ];
   "@kie-tools/dmn-language-service" [ color = "blue", fontcolor = "blue", style = "rounded" ];
   "@kie-tools-core/switch-expression-ts" [ color = "purple", fontcolor = "purple", style = "rounded" ];
   "@kie-tools/dmn-marshaller-backend-compatibility-tester" [ color = "black", fontcolor = "black", style = "dashed, rounded" ];
@@ -369,6 +370,7 @@ digraph G {
   "@kie-tools/dev-deployment-quarkus-blank-app-image" -> "@kie-tools/dev-deployment-quarkus-blank-app" [ style = "solid", color = "black" ];
   "@kie-tools/dev-deployment-quarkus-blank-app-image" -> "@kie-tools/maven-m2-repo-via-http-image" [ style = "dashed", color = "black" ];
   "@kie-tools/dev-deployment-upload-service" -> "@kie-tools/jest-base" [ style = "dashed", color = "black" ];
+  "@kie-tools/dmn-documentation-generator" -> "@kie-tools/dmn-marshaller" [ style = "solid", color = "blue" ];
   "@kie-tools/dmn-editor" -> "@kie-tools-core/react-hooks" [ style = "solid", color = "blue" ];
   "@kie-tools/dmn-editor" -> "@kie-tools/boxed-expression-component" [ style = "solid", color = "blue" ];
   "@kie-tools/dmn-editor" -> "@kie-tools/import-java-classes-component" [ style = "solid", color = "blue" ];
